@@ -22,6 +22,7 @@ var server = http.createServer(function(req, res) {
   // 别管这个，它仅仅用来取消浏览器对 favicon 的自动请求,
   // 如果不这样做的话，该服务器会返回一个 HTML 页面。
   if (req.url.match('favicon.ico')) {
+    console.log('ss');
     return res.end()
   }
 
